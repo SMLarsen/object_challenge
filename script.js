@@ -6,7 +6,7 @@ function State(state, revenue, locationCount) {
   this.revenue = revenue;
   this.locationCount = locationCount;
   this.averageRevenue = function() {
-    return revenue / locationCount;
+    return this.revenue / this.locationCount;
   };
 }
 
